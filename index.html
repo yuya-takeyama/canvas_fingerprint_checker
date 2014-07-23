@@ -7,9 +7,9 @@
   <script src="./js/fingerprint-0.5.4.js"></script>
   <script type="text/javascript">
     $(function () {
-        var text = "My Canvas fingerprint is " + (new Fingerprint({screen_resolution: true}).get());
-        $('#cfp_placeholder').text(text);
-        $('#tweet_button').attr('data-text', text);
+      var text = "My Canvas fingerprint is " + (new Fingerprint({screen_resolution: true}).get());
+      $('#cfp_placeholder').text(text);
+      $('#tweet_button').attr('data-text', text);
     });
   </script>
 </head>
