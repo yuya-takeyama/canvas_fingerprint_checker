@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Canvas Fingerprint Checker</title>
+  <title>Canvas fingerprint Checker</title>
   <script src="./js/jquery-2.1.1.min.js"></script>
   <script src="./js/fingerprint-0.5.4.js"></script>
   <script type="text/javascript">
     $(function () {
-        var text = "My Canvas-fingerprint is " + (new Fingerprint({screen_resolution: true}).get());
+        var text = "My Canvas fingerprint is " + (new Fingerprint({screen_resolution: true}).get());
         $('#cfp_placeholder').text(text);
         $('#tweet_button').attr('data-text', text);
     });
   </script>
 </head>
 <body>
-  <h1>Canvas Fingerprint Checker</h1>
+  <h1>Canvas fingerprint Checker</h1>
   <p id="cfp_placeholder"></p>
   <div>
     <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="canvas_fingerprint_checker" id="tweet_button">Tweet</a>
